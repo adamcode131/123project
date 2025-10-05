@@ -187,6 +187,71 @@
       box-shadow: var(--shadow-hover);
     }
 
+    /* Animation Classes */
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .animate-on-scroll.animated {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .animate-delay-1 {
+      transition-delay: 0.1s;
+    }
+
+    .animate-delay-2 {
+      transition-delay: 0.2s;
+    }
+
+    .animate-delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    .animate-delay-4 {
+      transition-delay: 0.4s;
+    }
+
+    .animate-delay-5 {
+      transition-delay: 0.5s;
+    }
+
+    .animate-fade-left {
+      opacity: 0;
+      transform: translateX(-30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .animate-fade-left.animated {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .animate-fade-right {
+      opacity: 0;
+      transform: translateX(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .animate-fade-right.animated {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .animate-scale {
+      opacity: 0;
+      transform: scale(0.9);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .animate-scale.animated {
+      opacity: 1;
+      transform: scale(1);
+    }
+
     .animate-in {
       opacity: 0;
       transform: translateY(20px);
@@ -1078,7 +1143,7 @@
       <div class="hero-bg"></div>
       <div class="container">
         <div class="hero-content">
-          <div class="alert-box animate-in">
+          <div class="alert-box animate-on-scroll">
             <svg class="alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
               <line x1="12" y1="9" x2="12" y2="13"/>
@@ -1089,25 +1154,25 @@
             </div>
           </div>
 
-          <div class="badge animate-in">P130-2025 • UCE obligatorie</div>
+          <div class="badge animate-on-scroll animate-delay-1">P130-2025 • UCE obligatorie</div>
 
-          <h1 class="hero-title animate-in">
+          <h1 class="hero-title animate-on-scroll animate-delay-2">
             Urmărirea comportării în exploatare (P130-2025)
             <span class="hero-title-accent">București & Ilfov</span>
           </h1>
 
-          <p class="hero-subtitle animate-in">
+          <p class="hero-subtitle animate-on-scroll animate-delay-3">
             <strong>Dr. ing. Silviu Ionescu Lupeanu</strong> – proiectant structuri metalice, diriginte de șantier categoria B, expertize și inspecții tehnice.
             Implementăm rapid <em>programul UCE</em>, realizăm <em>urmărirea curentă</em> (cel puțin anual și după evenimente) și <em>urmărirea specială</em> când este cazul.
           </p>
 
-          <div class="hero-cta animate-in">
+          <div class="hero-cta animate-on-scroll animate-delay-4">
             <a href="#preturi" class="btn btn-primary">Vezi prețuri</a>
             <a href="#contact" class="btn btn-secondary">Scrie-ne</a>
           </div>
         </div>
 
-        <div class="hero-image animate-in">
+        <div class="hero-image animate-on-scroll animate-delay-5">
           <div class="hero-image-frame">
             <img src="https://images.pexels.com/photos/8961188/pexels-photo-8961188.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Inspecție tehnică construcții" loading="lazy">
           </div>
@@ -1125,13 +1190,13 @@
     <section id="servicii" class="section section-services">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Ce oferim</span>
-          <h2 class="section-title">Servicii complete UCE</h2>
-          <p class="section-subtitle">De la elaborarea programului până la rapoarte detaliate și recomandări</p>
+          <span class="section-badge animate-on-scroll">Ce oferim</span>
+          <h2 class="section-title animate-on-scroll animate-delay-1">Servicii complete UCE</h2>
+          <p class="section-subtitle animate-on-scroll animate-delay-2">De la elaborarea programului până la rapoarte detaliate și recomandări</p>
         </div>
 
         <div class="services-grid">
-          <div class="service-card card-hover">
+          <div class="service-card card-hover animate-on-scroll">
             <div class="service-icon">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -1145,7 +1210,7 @@
             <p class="service-description">Întocmire Program UCE conform P130-2025 și CR0, adaptat tipului de construcție, frecvențe, responsabilități și formularistică de lucru.</p>
           </div>
 
-          <div class="service-card card-hover">
+          <div class="service-card card-hover animate-on-scroll animate-delay-1">
             <div class="service-icon">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="10"/>
@@ -1156,7 +1221,7 @@
             <p class="service-description">Vizite periodice, fișe de observație și imagini, completarea Jurnalului Evenimentelor. Raport anual și prioritizarea intervențiilor.</p>
           </div>
 
-          <div class="service-card card-hover">
+          <div class="service-card card-hover animate-on-scroll animate-delay-2">
             <div class="service-icon">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
@@ -1168,7 +1233,7 @@
             <p class="service-description">Activată după degradări semnificative sau evenimente. Fișă de constatări + recomandări imediate și actualizare program UCE.</p>
           </div>
 
-          <div class="service-card card-hover">
+          <div class="service-card card-hover animate-on-scroll animate-delay-3">
             <div class="service-icon">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
@@ -1180,7 +1245,7 @@
             <p class="service-description">Verificări orientative pentru tranzacții sau pre-recepție: neconformități vizibile, recomandări și bugete.</p>
           </div>
 
-          <div class="service-card card-hover service-card-featured">
+          <div class="service-card card-hover service-card-featured animate-on-scroll animate-delay-4">
             <div class="service-icon">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M12 2L2 7l10 5 10-5-10-5z"/>
@@ -1198,12 +1263,12 @@
     <section id="preturi" class="section section-pricing">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Transparență totală</span>
-          <h2 class="section-title">Pachete & prețuri</h2>
-          <p class="section-subtitle">Tarife orientative adaptate tipului de construcție</p>
+          <span class="section-badge animate-on-scroll">Transparență totală</span>
+          <h2 class="section-title animate-on-scroll animate-delay-1">Pachete & prețuri</h2>
+          <p class="section-subtitle animate-on-scroll animate-delay-2">Tarife orientative adaptate tipului de construcție</p>
         </div>
 
-        <div class="pricing-notice">
+        <div class="pricing-notice animate-on-scroll">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="10"/>
             <line x1="12" y1="16" x2="12" y2="12"/>
@@ -1213,7 +1278,7 @@
         </div>
 
         <div class="pricing-grid">
-          <div class="pricing-card card-hover">
+          <div class="pricing-card card-hover animate-on-scroll">
             <div class="pricing-icon">🏢</div>
             <h3 class="pricing-title">Bloc</h3>
             <div class="pricing-price">
@@ -1223,7 +1288,7 @@
             <p class="pricing-note">Promo lansare 2025<br>+ TVA</p>
           </div>
 
-          <div class="pricing-card card-hover">
+          <div class="pricing-card card-hover animate-on-scroll animate-delay-1">
             <div class="pricing-icon">🏠</div>
             <h3 class="pricing-title">Casă</h3>
             <div class="pricing-price">
@@ -1233,7 +1298,7 @@
             <p class="pricing-note">Promo lansare 2025<br>+ TVA</p>
           </div>
 
-          <div class="pricing-card card-hover pricing-card-popular">
+          <div class="pricing-card card-hover pricing-card-popular animate-on-scroll animate-delay-2">
             <div class="pricing-badge">Cel mai solicitat</div>
             <div class="pricing-icon">🏭</div>
             <h3 class="pricing-title">Hală</h3>
@@ -1244,7 +1309,7 @@
             <p class="pricing-note">Promo lansare 2025<br>+ TVA</p>
           </div>
 
-          <div class="pricing-card card-hover">
+          <div class="pricing-card card-hover animate-on-scroll animate-delay-3">
             <div class="pricing-icon">🏪</div>
             <h3 class="pricing-title">Birouri / Retail</h3>
             <div class="pricing-price">
@@ -1261,14 +1326,14 @@
     <section id="calculator" class="section section-calculator">
       <div class="container-narrow">
         <div class="section-header">
-          <span class="section-badge">Estimare rapidă</span>
-          <h2 class="section-title">Calculator orientativ</h2>
-          <p class="section-subtitle">Obține o estimare personalizată în câteva secunde</p>
+          <span class="section-badge animate-on-scroll">Estimare rapidă</span>
+          <h2 class="section-title animate-on-scroll animate-delay-1">Calculator orientativ</h2>
+          <p class="section-subtitle animate-on-scroll animate-delay-2">Obține o estimare personalizată în câteva secunde</p>
         </div>
 
-        <div class="calculator-card">
+        <div class="calculator-card animate-on-scroll">
           <form id="calc-form" class="calculator-form">
-            <div class="form-group">
+            <div class="form-group animate-on-scroll animate-delay-1">
               <label class="form-label">Tip clădire</label>
               <select name="tip" class="form-select">
                 <option value="bloc">Bloc</option>
@@ -1278,12 +1343,12 @@
               </select>
             </div>
 
-            <div class="form-group">
+            <div class="form-group animate-on-scroll animate-delay-2">
               <label class="form-label">Suprafață estimată (mp)</label>
               <input type="number" name="sup" min="0" step="10" placeholder="ex. 500" class="form-input">
             </div>
 
-            <div class="form-group-checkbox">
+            <div class="form-group-checkbox animate-on-scroll animate-delay-3">
               <label class="checkbox-label">
                 <input type="checkbox" name="instr" class="checkbox-input">
                 <span class="checkbox-custom"></span>
@@ -1292,7 +1357,7 @@
             </div>
           </form>
 
-          <div id="calc-out" class="calculator-result" aria-live="polite"></div>
+          <div id="calc-out" class="calculator-result animate-on-scroll animate-delay-4" aria-live="polite"></div>
         </div>
       </div>
     </section>
@@ -1301,13 +1366,13 @@
     <section id="echipamente" class="section section-equipment">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Tehnologie avansată</span>
-          <h2 class="section-title">Echipamente utilizate</h2>
-          <p class="section-subtitle">Instrumente de ultimă generație pentru inspecții precise</p>
+          <span class="section-badge animate-on-scroll">Tehnologie avansată</span>
+          <h2 class="section-title animate-on-scroll animate-delay-1">Echipamente utilizate</h2>
+          <p class="section-subtitle animate-on-scroll animate-delay-2">Instrumente de ultimă generație pentru inspecții precise</p>
         </div>
 
         <div class="equipment-grid">
-          <div class="equipment-card card-hover">
+          <div class="equipment-card card-hover animate-on-scroll">
             <div class="equipment-image">
               <img src="https://images.pexels.com/photos/8369532/pexels-photo-8369532.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cameră termografică" loading="lazy">
             </div>
@@ -1317,7 +1382,7 @@
             </div>
           </div>
 
-          <div class="equipment-card card-hover">
+          <div class="equipment-card card-hover animate-on-scroll animate-delay-1">
             <div class="equipment-image">
               <img src="https://images.pexels.com/photos/5691577/pexels-photo-5691577.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Scanner beton" loading="lazy">
             </div>
@@ -1327,7 +1392,7 @@
             </div>
           </div>
 
-          <div class="equipment-card card-hover">
+          <div class="equipment-card card-hover animate-on-scroll animate-delay-2">
             <div class="equipment-image">
               <img src="https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dronă inspecții" loading="lazy">
             </div>
@@ -1337,7 +1402,7 @@
             </div>
           </div>
 
-          <div class="equipment-card card-hover">
+          <div class="equipment-card card-hover animate-on-scroll animate-delay-3">
             <div class="equipment-image">
               <img src="https://images.pexels.com/photos/5691630/pexels-photo-5691630.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Telemetru laser" loading="lazy">
             </div>
@@ -1347,7 +1412,7 @@
             </div>
           </div>
 
-          <div class="equipment-card card-hover">
+          <div class="equipment-card card-hover animate-on-scroll animate-delay-4">
             <div class="equipment-image">
               <img src="https://images.pexels.com/photos/8961263/pexels-photo-8961263.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Endoscop industrial" loading="lazy">
             </div>
@@ -1357,7 +1422,7 @@
             </div>
           </div>
 
-          <div class="equipment-card card-hover">
+          <div class="equipment-card card-hover animate-on-scroll animate-delay-5">
             <div class="equipment-image">
               <img src="https://images.pexels.com/photos/5691576/pexels-photo-5691576.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Instrumente măsurare" loading="lazy">
             </div>
@@ -1374,43 +1439,43 @@
     <section id="public-tinta" class="section section-audience">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Pentru cine lucrăm</span>
-          <h2 class="section-title">Cui ne adresăm</h2>
-          <p class="section-subtitle">Soluții personalizate pentru fiecare tip de client</p>
+          <span class="section-badge animate-on-scroll">Pentru cine lucrăm</span>
+          <h2 class="section-title animate-on-scroll animate-delay-1">Cui ne adresăm</h2>
+          <p class="section-subtitle animate-on-scroll animate-delay-2">Soluții personalizate pentru fiecare tip de client</p>
         </div>
 
         <div class="audience-grid">
-          <div class="audience-card card-hover">
+          <div class="audience-card card-hover animate-on-scroll">
             <div class="audience-icon">🏛️</div>
             <h3 class="audience-title">Autorități locale & instituții publice</h3>
             <p class="audience-description">Primării, consilii locale/județene, școli, grădinițe, spitale, policlinici, creșe, cămine culturale – implementare UCE și raportare periodică.</p>
           </div>
 
-          <div class="audience-card card-hover">
+          <div class="audience-card card-hover animate-on-scroll animate-delay-1">
             <div class="audience-icon">🏘️</div>
             <h3 class="audience-title">Asociații de proprietari & administratori</h3>
             <p class="audience-description">Condominii P+4 până la turnuri – program UCE pe scări, vizite anuale, evidența degradărilor, comunicare cu comitetul.</p>
           </div>
 
-          <div class="audience-card card-hover">
+          <div class="audience-card card-hover animate-on-scroll animate-delay-2">
             <div class="audience-icon">🏗️</div>
             <h3 class="audience-title">Dezvoltatori & proprietari de portofolii</h3>
             <p class="audience-description">Birouri, retail, spații comerciale, parcări – integrare UCE cu mentenanța și bugetarea lucrărilor.</p>
           </div>
 
-          <div class="audience-card card-hover">
+          <div class="audience-card card-hover animate-on-scroll animate-delay-3">
             <div class="audience-icon">🏭</div>
             <h3 class="audience-title">Operatori industriali & logistici</h3>
             <p class="audience-description">Hale de producție/depozitare, depozite frigorifice – urmărire curentă/specială, instrumentare, zone cu risc tehnologic.</p>
           </div>
 
-          <div class="audience-card card-hover">
+          <div class="audience-card card-hover animate-on-scroll animate-delay-4">
             <div class="audience-icon">💼</div>
             <h3 class="audience-title">Investitori, bănci, asset managers</h3>
             <p class="audience-description">Due‑diligence tehnic, documente pentru finanțare/asigurare și monitorizare post‑intervenție.</p>
           </div>
 
-          <div class="audience-card card-hover">
+          <div class="audience-card card-hover animate-on-scroll animate-delay-5">
             <div class="audience-icon">🏡</div>
             <h3 class="audience-title">Proprietari persoane fizice</h3>
             <p class="audience-description">Locuințe individuale – program UCE simplificat, vizite după evenimente (cutremur, inundații, incendiu) și recomandări.</p>
@@ -1423,41 +1488,41 @@
     <section id="faq" class="section section-faq">
       <div class="container-narrow">
         <div class="section-header">
-          <span class="section-badge">Răspunsuri rapide</span>
-          <h2 class="section-title">Întrebări frecvente (FAQ)</h2>
-          <p class="section-subtitle">Tot ce trebuie să știi despre UCE</p>
+          <span class="section-badge animate-on-scroll">Răspunsuri rapide</span>
+          <h2 class="section-title animate-on-scroll animate-delay-1">Întrebări frecvente (FAQ)</h2>
+          <p class="section-subtitle animate-on-scroll animate-delay-2">Tot ce trebuie să știi despre UCE</p>
         </div>
 
         <div class="faq-list">
-          <details class="faq-item">
+          <details class="faq-item animate-on-scroll">
             <summary class="faq-question">Ce este UCE și cu ce diferă de expertiza tehnică?</summary>
             <div class="faq-answer">
               <p>UCE = vizite periodice și documentare a stării; expertiza tehnică este analiză de profunzime realizată de expert atestat, necesară când apar probleme serioase sau pentru autorizarea intervențiilor.</p>
             </div>
           </details>
 
-          <details class="faq-item">
+          <details class="faq-item animate-on-scroll animate-delay-1">
             <summary class="faq-question">Cine are obligația legală?</summary>
             <div class="faq-answer">
               <p>Proprietarii/administratorii clădirilor, publice și private, trebuie să elaboreze Programul UCE, să țină Jurnalul Evenimentelor și să efectueze vizite periodice documentate.</p>
             </div>
           </details>
 
-          <details class="faq-item">
+          <details class="faq-item animate-on-scroll animate-delay-2">
             <summary class="faq-question">Cât de des se fac vizitele?</summary>
             <div class="faq-answer">
               <p>Cel puțin anual (urmărire curentă) și ori de câte ori apar evenimente (cutremur, inundație, incendiu, tasări, avarii). Pentru unele clădiri se instituie urmărire specială.</p>
             </div>
           </details>
 
-          <details class="faq-item">
+          <details class="faq-item animate-on-scroll animate-delay-3">
             <summary class="faq-question">Care sunt livrabilele?</summary>
             <div class="faq-answer">
               <p>Program UCE, fișe de observație cu foto, Jurnalul Evenimentelor, raport anual cu concluzii și prioritizarea intervențiilor.</p>
             </div>
           </details>
 
-          <details class="faq-item">
+          <details class="faq-item animate-on-scroll animate-delay-4">
             <summary class="faq-question">Ce se întâmplă după un cutremur mai mare?</summary>
             <div class="faq-answer">
               <p>Se face vizită de <em>urmărire specială</em>, se consemnează efectele, se stabilesc măsuri imediate și necesitatea unei expertize tehnice.</p>
@@ -1471,12 +1536,12 @@
     <section id="contact" class="section section-contact">
       <div class="container-narrow">
         <div class="section-header">
-          <span class="section-badge">Să vorbim</span>
-          <h2 class="section-title">Contact</h2>
-          <p class="section-subtitle">Suntem aici să răspundem la toate întrebările tale</p>
+          <span class="section-badge animate-on-scroll">Să vorbim</span>
+          <h2 class="section-title animate-on-scroll animate-delay-1">Contact</h2>
+          <p class="section-subtitle animate-on-scroll animate-delay-2">Suntem aici să răspundem la toate întrebările tale</p>
         </div>
 
-        <div class="contact-info">
+        <div class="contact-info animate-on-scroll">
           <a href="mailto:ionescu.lupeanu.silviu@gmail.com" class="contact-link">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -1492,35 +1557,35 @@
           </a>
         </div>
 
-        <form id="contact-form" class="contact-form">
+        <form id="contact-form" class="contact-form animate-on-scroll">
           <div class="form-row">
-            <div class="form-group">
+            <div class="form-group animate-on-scroll animate-delay-1">
               <label class="form-label">Nume *</label>
               <input name="nume" required placeholder="Nume și prenume" class="form-input">
             </div>
-            <div class="form-group">
+            <div class="form-group animate-on-scroll animate-delay-2">
               <label class="form-label">Email *</label>
               <input type="email" name="email" required placeholder="email@domeniu.ro" class="form-input">
             </div>
           </div>
 
           <div class="form-row">
-            <div class="form-group">
+            <div class="form-group animate-on-scroll animate-delay-3">
               <label class="form-label">Telefon</label>
               <input name="telefon" placeholder="07xx xxx xxx" class="form-input">
             </div>
-            <div class="form-group">
+            <div class="form-group animate-on-scroll animate-delay-4">
               <label class="form-label">Subiect</label>
               <input name="subiect" placeholder="Solicitare UCE" class="form-input">
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group animate-on-scroll animate-delay-5">
             <label class="form-label">Mesaj *</label>
             <textarea name="mesaj" required rows="5" placeholder="Spune-ne pe scurt clădirea, suprafața, adresa și ce te interesează." class="form-textarea"></textarea>
           </div>
 
-          <button class="btn btn-primary btn-block" type="submit">Trimite mesajul</button>
+          <button class="btn btn-primary btn-block animate-on-scroll" type="submit">Trimite mesajul</button>
           <p id="form-status" class="form-status"></p>
         </form>
       </div>
@@ -1640,26 +1705,25 @@
       }, 1500);
     });
 
-    // Animate elements on scroll
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.animationDelay = '0s';
-          entry.target.classList.add('animate-in');
-          observer.unobserve(entry.target);
+    // Scroll Animations
+    const animateOnScroll = () => {
+      const elements = document.querySelectorAll('.animate-on-scroll');
+      
+      elements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add('animated');
         }
       });
-    }, observerOptions);
+    };
 
-    // Observe elements with animation classes
-    document.querySelectorAll('.service-card, .pricing-card, .equipment-card, .audience-card').forEach(el => {
-      observer.observe(el);
-    });
+    // Initialize animations on load
+    window.addEventListener('load', animateOnScroll);
+    
+    // Trigger animations on scroll
+    window.addEventListener('scroll', animateOnScroll);
   </script>
 </body>
 </html>
